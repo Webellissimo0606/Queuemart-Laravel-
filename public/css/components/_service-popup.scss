@@ -1,0 +1,34 @@
+.service-popup {
+    box-shadow: 0px 26px 202px 0px rgba($color-black, .53);
+    border-radius: 10px;
+
+    &__header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        height: 22.083rem;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        @include atSmall {
+            height: 16.5625rem;
+        }
+    }
+
+    &__content {
+        background-color: $color-white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 3.333rem 2.0833rem 2.0833rem 2.08333rem;
+        @include atSmall {
+            padding: 2.5rem 1.5625rem 1.5625rem 1.5625rem;
+        }
+    }
+
+    &__btn {
+        margin-top: 5.833rem;
+        @include atSmall {
+            margin-top: 4.375rem;
+        }
+    }
+}

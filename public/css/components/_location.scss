@@ -1,0 +1,43 @@
+.location {
+    &__map {
+        position: relative;
+
+        &-btn {
+            padding: 1.333rem;
+            border-radius: .833rem;
+            background-color: $color-black;
+            position: absolute;
+            bottom: 1.333rem;
+            right: 1.667rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            box-shadow: 0px 15px 33px 0px rgba($color-black, .15);
+            transition: all .25s;
+            @include linkStates($color-white, none);
+            @extend .paragraph;
+            @extend .paragraph--small;
+            @include atSmall {
+                padding: .875rem 1rem;
+                border-radius: .5rem;
+                right: 1.25rem;
+                bottom: 1rem;
+            }
+
+            &-icon {
+                width: 1.5rem;
+                margin-right: .833rem;
+                @include atSmall {
+                    width: .9375rem;
+                    margin-right: .5rem;
+                }
+            }
+
+            &:hover {
+                background-color: $color-primary-lgt;
+                color: $color-white;
+            }
+        }
+    }
+}

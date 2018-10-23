@@ -1,0 +1,63 @@
+.news-popup {
+    padding-bottom: 5rem;
+    @include atSmall {
+        padding-bottom: 3.75rem;
+    }
+
+    &__item {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        border: .25rem solid $color-white;
+        border-radius: .625rem;
+    }
+
+    &__copy {
+        text-align: center;
+        padding: 2.5rem 1.25rem;
+        @include atSmall {
+            padding: 1.875rem .9375rem;
+        }
+    }
+
+    .slick {
+        &-dots {
+            padding-top: 3.333rem;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            @include atSmall {
+                padding-top: 2.5rem;
+            }
+
+            li {
+                cursor: pointer;
+                height: 1rem;
+                width: 1rem;
+                border-radius: 50%;
+                background-color: $color-white;
+                border: 1px solid $color-white;
+                transition: all .25s;
+                @include atSmall {
+                    height: .75rem;
+                    width: .75rem;
+                }
+
+                & + li {
+                    margin-left: 3rem;
+                    @include atSmall {
+                        margin-left: 2.25rem;
+                    }
+                }
+
+                &.slick-active {
+                    background-color: $color-primary-alt-7;
+                }
+            }
+        }
+    }
+}

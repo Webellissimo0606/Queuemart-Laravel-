@@ -1,0 +1,9 @@
+.headline {
+    background-image: linear-gradient( to right, $color-primary-lgt 0%, $color-primary-drk 100%);
+    padding: 2.9167rem 0;
+    max-width: 576px;
+    margin: 0 auto;
+    @include atSmall {
+        padding: 2.1875rem 0;
+    }
+}

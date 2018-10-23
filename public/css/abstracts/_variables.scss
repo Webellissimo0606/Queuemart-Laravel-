@@ -1,0 +1,39 @@
+// Colors
+$color-primary: #514ceb;
+$color-primary-lgt: #fb428d;
+$color-primary-lgt-2: #f0edfb;
+$color-primary-drk: #504be9;
+$color-primary-alt: #6a4add;
+$color-primary-alt-2: #a647bb;
+$color-primary-alt-3: #6958ce;
+$color-primary-alt-4: #646288;
+$color-primary-alt-5: #684bdf;
+$color-primary-alt-6: #5674b9;
+$color-primary-alt-7: #1b1464;
+
+$color-secondary: #64d618;
+
+$color-error: #f34747;
+$color-error-lgt: #fdebeb;
+
+$color-black: #000000;
+$color-black-alt: rgba($color-black, .6);
+$color-gray: #707070;
+$color-gray-alt: #777777;
+$color-gray-alt-2: #797979;
+$color-gray-alt-3: #e2e2e2;
+$color-gray-alt-4: #9f9f9f;
+$color-gray-alt-5: #9f9f9f;
+$color-gray-alt-6: #cdcdcd;
+$color-gray-alt-7: #9b9b9b;
+$color-gray-alt-8: #cccccc;
+$color-gray-lgt: #f5f5fb;
+$color-gray-lgt-2: #dfdfdf;
+$color-gray-lgt-3: #fffbfd;
+$color-white: #ffffff;
+
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+$font-main: "Poppins", "Helvetica", "Arial", sans-serif;

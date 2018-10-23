@@ -1,0 +1,52 @@
+// SOCIAL ICONS
+
+.social_area {
+    border-right: 1px solid #1b1b1b;
+    padding-top: 0.1px;
+    min-height: 100vh;
+    width: 5.2rem;
+    
+    .social_icons {
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 14.7rem;
+        position: relative;
+        padding: 2rem 0;
+        display: flex;
+        left: 1.5rem;
+        width: 7rem;
+    }
+    
+    li {
+        margin-bottom: 4.5rem;
+
+        i {
+            font-size: 3.5rem;
+            color: #4d4d4d;
+            transition: all .25s;
+
+            &.fa-facebook-f {
+                &:hover {
+                    color: #3b5998;
+                }
+            }
+
+            &.fa-instagram {
+                &:hover {
+                    color: #cd486b;
+                }
+            }
+
+            &.fa-twitter {
+                &:hover {
+                    color: #55acee;
+                }
+            }
+        }
+    }
+    
+    li:last-child {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,189 @@
+html,
+body {
+    overflow-x: hidden;
+    font-size: 2.25vw;
+    @include atSmall {
+        font-size: 14px;
+    }
+    @include atMedium {
+        font-size: 15px;
+    }
+    @include atLarge {
+        font-size: 16px;
+    }
+}
+
+main {
+    max-width: 576px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul,
+ol,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    @extend .heading-primary;
+}
+
+h2 {
+    @extend .heading-secondary;
+}
+
+h3 {
+    @extend .heading-tertiary;
+}
+
+p,
+a {
+    @extend .paragraph;
+}
+
+a {
+    transition: all .25s;
+    @include linkStates($color-primary, none);
+
+    &:hover {
+        color: $color-primary-lgt;
+    }
+
+    &.u-color-primary-lgt {
+        @include linkStates($color-primary-lgt, none);
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+input,
+button,
+select {
+    border: none !important;
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+select {
+    appearance: none;
+    padding: 1.25rem;
+    background-image: url("../images/i-chevron.svg"), linear-gradient( 30deg, $color-primary-lgt 0%, $color-primary-drk 86%);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1.25rem) 40%, center;
+    background-size: auto 30%, cover;
+    font-family: $font-main;
+    font-weight: 500;
+    color: $color-white;
+    display: block;
+    font-size: 1.4167rem;
+    min-width: 11rem;
+    @include atSmall {
+        padding: .9375rem;
+        font-size: 1.0625rem;
+        min-width: 8.5rem;
+    }
+
+    &.simple {
+        font-weight: 600 !important;
+        letter-spacing: .02em;
+        color: $color-primary-alt-5 !important;
+        background: none;
+        min-width: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        @extend .paragraph;
+        @extend .paragraph--big;
+    }
+}
+
+input {
+    border: 1px solid $color-gray-alt-5 !important;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    height: 6.25rem;
+    color: $color-black;
+    padding: 0 2.083rem;
+    background: transparent;
+    @extend .paragraph;
+    @extend .paragraph--big;
+    @include atSmall {
+        height: 4.6875rem;
+        padding: 0 1.5625rem;
+    }
+
+    &::placeholder {
+        color: $color-gray-alt-6;
+    }
+
+    &.digit {
+        border: 0 !important;
+        border-radius: 0;
+        border-bottom: 2px solid $color-gray-alt-3 !important;
+        background-image: url("../images/i-asterisk.svg");
+        background-repeat: no-repeat;
+        background-size: 30% auto;
+        background-position: center;
+        text-align: center;
+        color: $color-black !important;
+        font-size: 5rem !important;
+        @extend .heading-primary;
+
+        &:valid {
+            background: none;
+        }
+    }
+
+    &[type="checkbox"] {
+        border-radius: 5px;
+        height: 2.083rem;
+        width: 2.083rem;
+        border: 2px solid $color-gray-lgt-2 !important;
+        appearance: none;
+        margin-right: 1.25rem;
+        transition: all .25s;
+        cursor: pointer;
+        @include atSmall {
+            height: 1.5625rem;
+            width: 1.5625rem;
+            margin-right: .9375rem;
+        }
+
+        &:checked {
+            background-color: $color-primary-lgt;
+            border-color: $color-primary-lgt !important;
+        }
+    }
+}

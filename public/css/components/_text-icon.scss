@@ -1,0 +1,27 @@
+.text-icon {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &__img {
+        margin-right: 1.25rem;
+        width: 2.5rem;
+        @include atSmall {
+            margin-right: .9375rem;
+            width: 1.875rem;
+        }
+
+        &--small {
+            width: 1.083rem;
+            margin-right: 5px;
+            @include atSmall {
+                width: .8125rem;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &--center {
+        align-items: center;
+    }
+}

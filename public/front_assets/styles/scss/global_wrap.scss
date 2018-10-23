@@ -1,0 +1,12 @@
+.global_wrap {
+    background-image: url("../../images/others/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+}
+

@@ -1,0 +1,65 @@
+.booking {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__date {
+        margin-right: .833rem;
+        background-image: linear-gradient( to top, rgb(251,66,141) 0%, rgb(80,75,233) 100%);
+        box-shadow: 0px 18px 84px 0px rgba(148, 72, 197, 0.16);
+        border-radius: .5rem;
+        padding: 1.5rem 1rem;
+        width: 8.333rem;
+        @include atSmall {
+            margin-right: .625rem;
+            padding: 1.125rem .75rem;
+            width: 6.25rem;
+        }
+    }
+
+    &__box {
+        border: 1px solid $color-gray-lgt;
+        flex: 1;
+        border-radius: 10px;
+        padding: 2.083rem;
+        @include atSmall {
+            padding: 1.5625rem;
+        }
+    }
+
+    &__banner {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 3.333rem;
+        @include atSmall {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__location-btn {
+        width: 2.083rem;
+        display: block;
+        @include atSmall {
+            width: 1.5625rem;
+        }
+    }
+
+    &__actions {
+        margin-top: 1.667rem;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        @include atSmall {
+            margin-top: 1.25rem;
+        }
+
+        .btn {
+            & + .btn {
+                margin-left: 1rem;
+                @include atSmall {
+                    margin-left: .75rem;
+                }
+            }
+        }
+    }
+}

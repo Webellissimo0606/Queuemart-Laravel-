@@ -1,0 +1,206 @@
+// Colors
+.u-color {
+    &-primary {
+        color: $color-primary;
+
+        &-drk {
+            color: $color-primary-drk;
+        }
+        
+        &-lgt {
+            color: $color-primary-lgt;
+        }
+
+        &-alt {
+            color: $color-primary-alt;
+
+            &-3 {
+                color: $color-primary-alt-3;
+            }
+
+            &-4 {
+                color: $color-primary-alt-4;
+            }
+        }
+    }
+
+    &-gray {
+        &-alt {
+            &-4 {
+                color: $color-gray-alt-4;
+            }
+        }
+    }
+
+    &-secondary {
+        color: $color-secondary;
+    }
+
+    &-gray {
+        color: $color-gray;
+
+        &-alt {
+            color: $color-gray-alt;
+
+            &-2 {
+                color: $color-gray-alt-2;
+            }
+        }
+    }
+
+    &-black {
+        color: $color-black;
+
+        &-alt {
+            color: $color-black-alt;
+        }
+    }
+
+    &-white {
+        color: $color-white;
+    }
+}
+
+
+// Font weight
+.u-weight {
+    &-lgt {
+        font-weight: 300;
+    }
+
+    &-reg {
+        font-weight: 400;
+    }
+
+    &-med {
+        font-weight: 500;
+    }
+
+    &-smb {
+        font-weight: 600;
+    }
+
+    &-bld {
+        font-weight: 700;
+    }
+}
+
+
+// Margin
+.u-margin {
+    &-bottom {
+        &-smallest {
+            margin-bottom: 5px;
+        }
+
+        &-smaller {
+            margin-bottom: 10px;
+        }
+
+        &-small {
+            margin-bottom: 1rem;
+            @include atSmall {
+                margin-bottom: .75rem;
+            }
+        }
+
+        &-med {
+            margin-bottom: 1.667rem;
+            @include atSmall {
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        &-big {
+            margin-bottom: 2rem;
+            @include atSmall {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &-huge {
+            margin-bottom: 2.9167rem;
+            @include atSmall {
+                margin-bottom: 2.1875rem;
+            }
+
+            &-2 {
+                margin-bottom: 4.167rem;
+                @include atSmall {
+                    margin-bottom: 3.125rem;
+                }
+            }
+        }
+    }
+}
+
+
+// Padding
+.u-padding {
+    &-top {
+        &-null {
+            padding-top: 0;
+        }
+    }
+}
+
+
+// Width
+.u-width {
+    &-full {
+        width: 100%;
+    }
+}
+
+
+// Text transform
+.u-text-transform {
+    &-none {
+        text-transform: none;
+    }
+}
+
+
+// Text decoration
+.u-underline {
+    text-decoration: underline;
+    @include linkStates(inherit, underline);
+}
+
+
+// Opacity
+.u-opacity {
+    &-6 {
+        opacity: .6;
+    }
+
+    &-7 {
+        opacity: .7;
+    }
+
+    &-8 {
+        opacity: .8;
+    }
+}
+
+
+// Letter spacing
+.u-letter-spacing {
+    &-small {
+        letter-spacing: .02em;
+    }
+
+    &-med {
+        letter-spacing: .025em;
+    }
+}
+
+
+// Alignment
+.u-align {
+    &-inline {
+        &-center {
+            text-align: center;
+        }
+    }
+}

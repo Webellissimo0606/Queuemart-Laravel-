@@ -1,0 +1,94 @@
+.form {
+    max-width: 100%;
+
+    &__content {
+        margin: 7.083rem 0;
+        @include atSmall {
+            margin: 5.3125rem 0;
+        }
+
+        &--alt {
+            margin: 4.167rem 0 2.9167rem 0;
+            @include atSmall {
+                margin: 3.125rem 0 2.1875rem 0;
+            }
+        }
+    }
+
+    &__group {
+        &-division {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: auto;
+            height: auto !important;
+
+            &:first-child {
+                width: 5rem;
+                @include atSmall {
+                    width: 3.75rem;
+                }
+            }
+
+            &:last-child {
+                flex: 1;
+                padding-left: 2rem;
+                margin-left: 1rem;
+                border-left: 1px solid $color-gray-alt-7;
+                @include atSmall {
+                    padding-left: 1.5rem;
+                    margin-left: .75rem;
+                }
+            }
+
+            input,
+            select {
+                border: 0 !important;
+                flex: 1;
+                padding: 0;
+                min-height: 0 !important;
+                height: auto !important;
+            }
+
+            select {
+                background-image: url("../images/i-caret.svg");
+                background-repeat: no-repeat;
+                background-size: 10px auto;
+                background-position: right 42%;
+            }
+        }
+
+        & + & {
+            margin-top: 1.25rem;
+            @include atSmall {
+                margin-top: .9375rem;
+            }
+        }
+
+        &--divided {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            border: 1px solid $color-gray-alt-5 !important;
+            border-radius: 5px;
+            width: 100%;
+            padding: 1.667rem;
+            @include atSmall {
+                padding: 1.25rem;
+            }
+        }
+    }
+
+    &__btn {
+        margin-bottom: 5rem;
+        @include atSmall {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,74 @@
+.contact {
+    margin-bottom: 1rem;
+    @include atSmall {
+        margin-bottom: .75rem;
+    }
+
+    &__box {
+        padding: 2.5rem;
+        border-radius: 7px;
+        background-image: linear-gradient( 34deg, $color-primary-lgt 0%, $color-primary-drk 100%);
+        box-shadow: 0px 18px 84px 0px rgba(148, 72, 197, 0.19);
+        transform: translateY(-3.333rem);
+        position: relative;
+        @include atSmall {
+            padding: 1.875rem;
+            transform: translateY(-2.5rem);
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+
+        &-icon {
+            width: 1.0833rem;
+            transform: translateY(3px);
+            @include atSmall {
+                width: .8125rem;
+            }
+        }
+
+        &-copy {
+            margin-left: 10px;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-white;
+        border-radius: .833rem;
+        position: absolute;
+        bottom: 1.667rem;
+        right: 1.667rem;
+        height: 4.167rem;
+        width: 4.167rem;
+        box-shadow: 0px 15px 33px 0px rgba($color-black, .19);
+        transition: all .25s;
+        @include atSmall {
+            right: 1.25rem;
+            bottom: 1.25rem;
+            width: 3.125rem;
+            height: 3.125rem;
+            border-radius: .625rem;
+        }
+
+        &-icon {
+            width: 45%;
+            height: 45%;
+            transition: all .25s;
+        }
+
+        &:hover {
+            background-color: $color-primary-lgt;
+            
+            .contact__btn-icon {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.bookings {
+    &__list {
+        &-item {
+            & + & {
+                margin-top: 2rem;
+                @include atSmall {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+}

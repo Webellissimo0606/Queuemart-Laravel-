@@ -1,0 +1,20 @@
+.service-box {
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1.667rem 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    @include atSmall {
+        height: 15rem;
+        padding: 1.25rem 10px;
+    }
+
+    & + & {
+        margin-top: 1.25rem;
+        @include atSmall {
+            margin-top: .9375rem;
+        }
+    }
+}

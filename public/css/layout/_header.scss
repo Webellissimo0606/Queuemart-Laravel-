@@ -1,0 +1,47 @@
+.header {
+    padding: 1.667rem 0;
+    max-width: 576px;
+    margin: 0 auto;
+    @include atSmall {
+        padding: 1.25rem 0;
+    }
+
+    &__icon {
+        height: 2.5rem;
+        cursor: pointer;
+        @include atSmall {
+            height: 1.875rem;
+        }
+
+        &--white {
+            filter: brightness(0) invert(1);
+        }
+
+        &--left {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        &--back {
+            height: 1.5rem;
+            @include atSmall {
+                height: 1.125rem;
+            }
+        }
+    }
+
+    &--absolute {
+        position: absolute;
+        z-index: 3;
+        top: 2.9167rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: auto;
+        @include atSmall {
+            top: 2.1875rem;
+        }
+    }
+}

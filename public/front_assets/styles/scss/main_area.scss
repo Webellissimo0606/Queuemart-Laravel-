@@ -1,0 +1,51 @@
+// MAIN AREA
+
+.main_area {
+    margin: 5.2rem 0 0 8.4rem;
+    flex: 1;
+    align-self: flex-start;
+    
+    .logo {
+        font-family: 'Josefin Sans', sans-serif;
+        margin-bottom: 5rem;
+        font-size: 3.6rem;
+        color: white;
+    }
+    
+    h4 {
+        font-family: 'Abhaya Libre', serif;
+        margin-bottom: 4rem;
+        font-size: 10rem;
+        color: rgba(#ffffff, .1);
+    }
+    
+    .text {
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 7.3rem;
+        margin-bottom: 3rem;
+        font-size: 4.5rem;
+        color: white;
+        width: 83%;
+
+        .break {
+            @media screen and (min-width: 1500px) {
+                display: block;
+            }
+        }
+    }
+    
+    .stores_wrap {
+        display: flex;
+        
+        img {
+            margin-right: 2rem;
+            width: 20rem;
+        }
+    }
+    
+    .qr_code {
+        margin-top: 3.5rem;
+        width: 8.2rem;
+    }
+    
+}

@@ -1,0 +1,34 @@
+.verify {
+    padding: 8.333rem 0;
+    @include atSmall {
+        padding: 6.25rem 0;
+    }
+
+    &__intro {
+        text-align: center;
+
+        &-icon {
+            width: 10rem;
+            display: block;
+            margin: 0 auto 3.333rem auto;
+            @include atSmall {
+                width: 7.5rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+    &__code {
+        input {
+            width: 20%;
+        }
+    }
+
+    &__help {
+        text-align: center;
+        margin-top: 17.5rem;
+        @include atSmall {
+            margin-top: 13.125rem;
+        }
+    }
+}

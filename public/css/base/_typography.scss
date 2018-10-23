@@ -1,0 +1,102 @@
+.heading-primary {
+    font-family: $font-main;
+    color: $color-white;
+    font-weight: 600;
+    font-size: 2.5rem;
+    @include atSmall {
+        font-size: 1.875rem;
+    }
+
+    &--big {
+        font-size: 2.9167rem;
+        font-weight: 500;
+        @include atSmall {
+            font-size: 2.1875rem;
+        }
+    }
+
+    &--huge {
+        font-size: 3.083rem;
+        line-height: 3.75rem;
+        letter-spacing: .02em;
+        @include atSmall {
+            font-size: 2.3125rem;
+            line-height: 2.8125rem;
+        }
+
+        &-2 {
+            font-size: 4.167rem;
+            @include atSmall {
+                font-size: 3.125rem;
+            }
+        }
+    }
+}
+
+.heading-secondary {
+    font-family: $font-main;
+    color: $color-white;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    @include atSmall {
+        font-size: 1.5rem;
+    }
+}
+
+.heading-tertiary {
+    font-family: $font-main;
+    color: $color-black;
+    font-weight: 700;
+    font-size: 1.667rem;
+    text-transform: uppercase;
+    @include atSmall {
+        font-size: 1.25rem;
+    }
+}
+
+.paragraph {
+    font-family: $font-main;
+    color: $color-black;
+    font-weight: 400;
+    font-size: 1.333rem;
+    @include atSmall {
+        font-size: 1rem;
+    }
+
+    &--med {
+        font-size: 1.167rem;
+        color: $color-white;
+        @include atSmall {
+            font-size: .875rem;
+        }
+
+        &-2 {
+            font-size: 1.4167rem;
+            @include atSmall {
+                font-size: 1.0625rem;
+            }
+        }
+    }
+
+    &--small {
+        font-size: 1rem;
+        @include atSmall {
+            font-size: .75rem;
+        }
+    }
+
+    &--big {
+        font-size: 1.667rem;
+        @include atSmall {
+            font-size: 1.25rem;
+        }
+
+        &-2 {
+            font-size: 1.833rem;
+            @include atSmall {
+                font-size: 1.375rem;
+            }
+        }
+    }
+}
