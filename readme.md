@@ -13,7 +13,7 @@ This project of for Queuemart company in Malaysia (CEO --- Nic)
 
 This is Web app.
 This is consists of Admin and Frontend
-Admin is B2B and according to is per admin frontend can be B2C
+Admin is B2B and according to this every admin, frontend will be B2C
 
 explaination : 
 
