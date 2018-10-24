@@ -28,4 +28,4 @@ You can follow standard installation
 Please check .gitignore file and you should add 4 or 5 project folder in current project
 as well and also input the current database, too.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+__ __ __
