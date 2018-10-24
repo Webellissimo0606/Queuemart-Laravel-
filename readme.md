@@ -9,7 +9,7 @@
 
 ## About This Project
 
-This project of for Queuemart company in Malaysia (CEO --- Nic)
+This project of for Queuemart company (CEO --- Nic)
 
 This is Web app.
 This is consists of Admin and Frontend
